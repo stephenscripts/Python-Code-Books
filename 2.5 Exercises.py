@@ -22,4 +22,16 @@ for i in range(8, 90, 3):
 for i in range(100, 0, -2):
     print(i)
 
-#Number 7 To be continued
+# Number 7
+for i in range(11):
+    print("A")
+for j in  range(8):
+    print("B")
+for k in range(5):
+    print("CD")
+    if k == 4:
+        print("E")
+for l in range(7):
+    print("F")
+    if l == 6:
+        print("G")
