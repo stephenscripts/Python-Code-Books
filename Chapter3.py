@@ -1,4 +1,4 @@
-
+from random import randint
 groups = []
 Title = "Here are the list of Groups"
 print(Title.capitalize())
