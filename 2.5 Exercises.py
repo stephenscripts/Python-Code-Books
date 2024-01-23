@@ -1,4 +1,5 @@
-
+from decimal import getcontext
+getcontext().prec = 1000
 # Number 1
 for i in range(101):
     print("Nnamani Stephen")
