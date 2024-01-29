@@ -13,12 +13,35 @@ height = int(input("Please type the height of the Diamond-triangle (only numbers
 m = 1
 x = 0
 for f in range(height + 1):
-    if f < height/2:
+    if f < (height/2):
         space = " " * int((height/2) - f)
         print(space, "*" * m)
         m += 2
     elif f > height/2:
+        if f == int(height/2) + 1:
+            m -= 2
+            if height % 2 == 0:
+                print(space, "*" * m)
         m -= 2
-        space = " " * int(x)
+        if height % 2 == 0:
+            space = " " * int(x + 2)
+        else:
+            space = " " * int(x + 1)
         print(space, "*" * m)
         x += 1
+
+# Number 15
+A_height = int(input("Please type the height of the \"A\" (only numbers): "))
+x0 = A_height
+x1 = 1
+for o in range(A_height, 0, -1):
+    if o > int(A_height / 2):
+        if o == A_height:
+            print(" " * x0, "*")
+            x0 -= 1
+        else:
+            print(" " * x0, "*", "" * x1, "*")
+            x1 += 1
+            x0 -= 1
+    if o == int(A_height / 2):
+        print(" " * x0, "* " * A_height)
