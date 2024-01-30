@@ -41,7 +41,7 @@ if A_height % 2 == 0:
             x0 -= 1
             x1.append("")
         elif o == int(A_height / 2):
-            print(" " * x0, "*", " *" * int(A_height / 2))
+            print(" " * x0, "* ", "*" * int(A_height - 3), " *")
             x0 -= 1
             x1.append(" ")
         else:
@@ -55,7 +55,7 @@ else:
             x0 -= 1
             x1.append("")
         elif b == int((A_height / 2) + 1):
-            print(" " * x0, "*_", "* " * int(A_height/2))
+            print(" " * x0, "*", "*" * int(A_height - 3), "*")
             x0 -= 1
             x1.append(" ")
         else:
