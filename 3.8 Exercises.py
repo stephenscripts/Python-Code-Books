@@ -38,8 +38,8 @@ print(x)
 
 print("Number 8")
 seconds = int(input("Please enter your time in seconds: "))
-mins = seconds/60
-seconds = seconds % 60
-print("The Minute.Seconds conversion of: ", seconds, "seconds, is: ", mins, "mins", seconds, "secs")
+minutes = int(seconds/60)
+second = seconds % 60
+print("The Minute.Seconds conversion of: ", seconds, "seconds, is: ", minutes, "minutes", second, "secs")
 
 
