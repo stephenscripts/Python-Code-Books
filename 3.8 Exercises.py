@@ -40,6 +40,6 @@ print("Number 8")
 seconds = int(input("Please enter your time in seconds: "))
 minutes = int(seconds/60)
 second = seconds % 60
-print("The Minute.Seconds conversion of: ", seconds, "seconds, is: ", minutes, "minutes", second, "secs")
+print("The Minute.Seconds conversion of: ", seconds, "seconds, is: ", minutes, "minutes", second, "seconds")
 
 
