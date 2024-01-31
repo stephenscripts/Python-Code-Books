@@ -32,8 +32,7 @@ print(abs(x-y)/(x+y)) # abs() returns the absolute value of a computation
 
 print("Number 7")
 angle = int(input("Please enter your angel from -180 to 180: "))
-if angle % 180 == 0:
-    if angle == -180:
-        print()
+x = angle % 360
+print(x)
 
 
