@@ -36,4 +36,10 @@ x = angle % 360
 x = str(x) + "°"
 print(x)
 
+print("Number 8")
+seconds = int(input("Please enter your time in seconds: "))
+mins = seconds/60
+seconds = seconds % 60
+print("The Minute.Seconds conversion of: ", seconds, "seconds, is: ", mins, "mins", seconds, "secs")
+
 
