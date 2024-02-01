@@ -44,4 +44,4 @@ print("The Minute.Seconds conversion of: ", seconds, "seconds, is: ", minutes, "
 
 print("Number 9")
 
-
+hour = int(input("How many hours do you want to go to (from 1 - 12 hours)"))
