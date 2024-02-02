@@ -44,4 +44,13 @@ print("The Minute.Seconds conversion of: ", seconds, "seconds, is: ", minutes, "
 
 print("Number 9")
 
-hour = int(input("How many hours do you want to go to (from 1 - 12 hours)"))
+start_hour = int(input("How many hours do you want to go to (from 1 - 12 hours): "))
+trip_hour = int(input("How many hours do you want to go?: "))
+duration = start_hour + trip_hour
+current_time = duration % 12
+
+if current_time != 0:
+    print("New Hour: ", current_time, "o'Clock")
+else:
+    current_time = 12
+    print("New Hour: ", current_time, "o'Clock")
