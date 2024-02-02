@@ -29,4 +29,7 @@ power = str(power)
 power2 = []
 
 for i in range(len(power) + 1):
-    
+    if i == len(power):
+        power2[-1] = power[-1]
+    else:
+        power2[i] = "*"
