@@ -40,7 +40,3 @@ print("Number 10C")
 power = int(input("What power of two do you wish to get?: "))
 Digits = int(input("How many last digists do you want: "))
 Power_of_two = 2 ** power
-
-
-
-
