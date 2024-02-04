@@ -23,10 +23,24 @@ else:
     current_time = current_time - 12
     print("New Hour: ", current_time, "o'Clock PM")
 
-print("Number 10")
+print("Number 10A")
 power = int(input("What power of two do you wish to get?: "))
-power = str(power)
-power2 = []
+Power_of_two = 2 ** power
+print("The last digit is: ", Power_of_two % 10)
 
-for i in range(len(power) + 1):
-    
+print("Number 10B")
+power = int(input("What power of two do you wish to get?: "))
+Power_of_two = 2 ** power
+if power < 100:
+    print("The last digit is: ", "0" * int(len(str(Power_of_two)) - len(str(Power_of_two % 100))), Power_of_two % 100)
+else:
+    print("The last digit is: ", Power_of_two % 100)
+
+print("Number 10C")
+power = int(input("What power of two do you wish to get?: "))
+Digits = int(input("How many last digists do you want: "))
+Power_of_two = 2 ** power
+
+
+
+
